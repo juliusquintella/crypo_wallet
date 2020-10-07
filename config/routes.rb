@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :coins
   #get '/coins', to: 'coins#index'
+
+  delete '/coins/:id', to: 'coins#destroy'
   
   root to: 'welcome#index'
   
